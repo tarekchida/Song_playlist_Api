@@ -36,17 +36,16 @@ The app response in a Json format
 -	Browser (Chrome/ Firefox/IE11)      
 
 ### Steps:  
--	Unzip the archive / clone the repository    
--	Copy the api_rest_player folder in your web folder (exp /var/www/html/)     
+-	Unzip the archive / clone the repository
+-	Copy the api_rest_player folder in your web folder (exp /var/www/html/)
 -	Create a Vhost that point to the **/public** folder
--       Under the root folder use the terminal to run   
+-	Under the root folder use the terminal to run
   
 ```
 composer install
 ```
 This will create Vendor folder and load unit testing dependancies. 
-
--       Then run   
+Then run  
   
 ```
 composer dump-autoload -o
@@ -77,15 +76,15 @@ $router->get([Route_Url], [Controller]#[Action]);
 ```
 
 ### Models
-Models need to extends the BaseModel Class [Lib/BaseModel.php](Lib/BaseModel.php).    
-Static function for simple acces from the Controllers : 
+Models need to extends the BaseModel Class [Lib/BaseModel.php](Lib/BaseModel.php).
+Static function for simple acces from the Controllers :
 
 ```php
 $user = User::find($id);
 
 ```
-### Controllers     
-Controllors need to extends the BaseController Class [Lib/BaseController.php](Lib/BaseController.php).       
+### Controllers
+Controllors need to extends the BaseController Class [Lib/BaseController.php](Lib/BaseController.php).
 
 ### Error / Exception Handler
 The app handle Errors and Exceptions and wirte them to a log file under the log folder
