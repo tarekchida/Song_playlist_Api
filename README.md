@@ -52,6 +52,8 @@ composer dump-autoload -o
 ```
 This commande will generate the autoload file. 
 
+-	 The database sql is under the **/sql** folder  [sql/dz.sql](sql/dz.sql)
+
 ### Configuration
 
 Open the [App/Config.php](App/Config.php) file and add your database config : 
